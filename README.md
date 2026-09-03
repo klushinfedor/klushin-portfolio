@@ -17,7 +17,7 @@
 Сайт адаптирован для просмотра на компьютерах, планшетах и смартфонах.
 
 ## Инструменты
-Figma, Adobe Photoshop, Illustrator, After Effects, Premiere Pro, Media Encoder и AI-инструменты.
+Figma, Adobe Photoshop, Illustrator, After Effects, Premiere Pro, Media Encoder.
 
 ## Портфолио
 [Открыть сайт-портфолио](https://fedor2007kl-afk.github.io/klushin-portfolio/)
