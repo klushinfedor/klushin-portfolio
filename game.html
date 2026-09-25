@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Игра 2048 — Фёдор Клушин</title>
+<meta name="description" content="Небольшая пауза в портфолио Фёдора Клушина: сыграйте в 2048 и продолжайте даже после победы.">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css"><link rel="stylesheet" href="css/redesign.css">
+</head>
+<body class="page-game">
+<a class="skip-link" href="#main">К содержанию</a>
+<header class="site-header site-header--scene"><a class="site-header__mark" href="index.html">ФЁДОР КЛУШИН</a><button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Открыть меню"><span></span><span></span></button><nav class="site-nav" id="site-nav" aria-label="Основная навигация"><a href="about.html">О себе</a><a href="works.html">Работы</a><a href="contacts.html">Контакты</a></nav></header>
+<main id="main" class="game-scene">
+  <div class="game-scene__intro"><p>Небольшая пауза</p><h1>СЫГРАЕМ В 2048?</h1><p>Соединяйте одинаковые числа. Дойдите до 2048 — игра продолжится.</p></div>
+  <section class="game-shell" aria-label="Игра 2048">
+    <div class="game-shell__top">
+      <div class="game-score"><span>Счёт</span><strong id="score">0</strong></div>
+      <div class="game-score"><span>Рекорд</span><strong id="best">0</strong></div>
+      <button class="game-reset" id="new-game" type="button">Новая игра ↻</button>
+    </div>
+    <div class="game-board" id="game-board" role="grid" aria-label="Поле 2048, четыре на четыре" tabindex="0"></div>
+    <p class="game-status" id="game-status" role="status" aria-live="polite">← ↑ ↓ → или свайп на телефоне</p>
+    <p class="game-record-note">Рекорд сохраняется в этом браузере и обновляется, только когда вы его побьёте.</p>
+  </section>
+  <a class="game-scene__back" href="contacts.html">← Вернуться к контактам</a>
+  <a class="game-scene__home" href="index.html">В начало ↑</a>
+</main>
+<script src="js/i18n-data.js"></script>
+<script src="js/i18n.js"></script>
+<script src="js/site.js"></script>
+<script src="js/game-core.js"></script>
+<script src="js/game2048.js"></script>
+</body>
+</html>

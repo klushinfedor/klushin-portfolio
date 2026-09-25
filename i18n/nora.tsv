@@ -1,0 +1,29 @@
+E-commerce web design · UI/UX · 2025–2026	Veb dizajn e-trgovine · UX/UI · 2025–2026	E-commerce web design · UX/UI · 2025–2026
+Концепт-проект:	Konceptualni projekat:	Concept project:
+визуальная система	vizuelni sistem	visual system
+интернет-магазина для бренда базовой одежды из органического хлопка — от философии материала до карточки товара с конфигуратором и мобильной версии.	onlajn prodavnice odeće od organskog pamuka — od filozofije materijala do stranice proizvoda sa konfiguratorom i mobilne verzije.	an online store for organic cotton essentials — from the material story to a configurable product page and mobile version.
+UI/UX · веб-дизайн · адаптивные сетки · состояния интерфейса	UX/UI · veb dizajn · prilagodljive mreže · stanja interfejsa	UX/UI · web design · responsive grids · interface states
+Главная · карточка товара · конфигуратор · «О бренде» · контакты · мобильная версия	Početna · stranica proizvoda · konfigurator · o brendu · kontakt · mobilna verzija	Home · product page · configurator · about · contact · mobile
+Figma · AI image tools	Figma · AI alati za slike	Figma · AI image tools
+E-commerce visual system · portfolio concept	Vizuelni sistem e-trgovine · koncept za portfolio	E-commerce visual system · portfolio concept
+// Самостоятельный концепт-проект. Бренд NŌRA Studio создан для демонстрации интерфейса.	// Samostalni koncept. Brend NŌRA Studio kreiran je za prikaz interfejsa.	// Self-initiated concept. NŌRA Studio was created to demonstrate the interface.
+01 — Материал	01 — Materijal	01 — Material
+Философия начинается с нитки	Filozofija počinje od niti	The story starts with a thread
+100% органический хлопковый поплин: плотное плетение держит форму, но дышит. Три тезиса — ткань, драп, слои — заданы как редакционный список с макро-съёмкой.	100% organski pamučni poplin: gusto tkanje čuva oblik, ali diše. Tkanina, pad i slojevi prikazani su kao urednički spisak uz makro fotografije.	100% organic cotton poplin: a dense weave holds its shape while breathing. Fabric, drape and layers become an editorial list with macro imagery.
+02 — Силуэт и размер	02 — Silueta i veličina	02 — Silhouette and fit
+Relaxed everyday	Opušteno za svaki dan	Relaxed everyday
+Приспущенное плечо, прямой низ, посадка «свободно, но не оверсайз». Размерная сетка S–L с чертежом кроя и гайдом по замерам.	Spušteno rame, ravan rub i kroj koji je slobodan, ali nije prevelik. Tabela veličina S–L sa crtežom kroja i vodičem za merenje.	Dropped shoulders, a straight hem and a relaxed fit without going oversized. Sizes S–L include a cut diagram and measuring guide.
+03 — Главная	03 — Početna	03 — Home
+Один экран — одна мысль	Jedan ekran — jedna ideja	One screen, one idea
+Главная как разворот журнала: крупная съёмка, неспешная типографика, единственная чёрная кнопка-акцент. Блоки о материале, atelier stories, тихий CTA.	Početna strana kao stranice časopisa: velika fotografija, smirena tipografija i jedno crno dugme. Blokovi o materijalu, atelier priče i nenametljiv poziv na akciju.	The home page reads like a magazine spread: large photography, unhurried type and one black accent button. Material stories, atelier notes and a quiet CTA follow.
+04 — Карточка товара	04 — Stranica proizvoda	04 — Product page
+Карточка с конфигуратором	Stranica sa konfiguratorom	A configurable product page
+Цвет (Ivory / Sage / Charcoal), размер, статус наличия, подсказка по росту модели. Каждое состояние конфигуратора отрисовано отдельно.	Boja (Ivory / Sage / Charcoal), veličina, dostupnost i podatak o visini modela. Svako stanje konfiguratora je zasebno dizajnirano.	Color (Ivory / Sage / Charcoal), size, availability and model height. Each configurator state is designed separately.
+05 — Мобильная версия	05 — Mobilna verzija	05 — Mobile version
+Тот же ритм на телефоне	Isti ritam na telefonu	The same rhythm on mobile
+Длинный спокойный скролл, крупные тач-зоны, конфигуратор укладывается в один экран. Сетка перестраивается, иерархия сохраняется.	Dugačak, miran skrol, velika područja za dodir i konfigurator koji staje na jedan ekran. Mreža se menja, hijerarhija ostaje.	A calm long scroll, generous touch targets and a configurator that fits one screen. The grid adapts while the hierarchy remains.
+06 — О бренде	06 — O brendu	06 — About the brand
+Страница бренда и запрос	Stranica brenda i upit	Brand page and inquiry
+«Less but better», material honesty, everyday utility — три принципа плюс форма запроса для прессы и опта.	„Manje, ali bolje”, iskrenost materijala i svakodnevna korisnost — tri principa uz obrazac za medije i veleprodaju.	“Less but better,” material honesty and everyday utility: three principles plus a press and wholesale inquiry form.
+Полный набор экранов · 22 разворота	Svi ekrani · 22 strane	All screens · 22 spreads
+

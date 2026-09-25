@@ -11,27 +11,29 @@
 <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Unbounded:wght@600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../css/styles.css">
+<link rel="stylesheet" href="../css/redesign.css">
 </head>
-<body>
+<body class="page-case-redesign">
 <div class="grain" aria-hidden="true"></div>
 <a class="skip-link" href="#main">К содержанию</a>
-<header class="site-header">
-  <a class="site-header__mark" href="../index.html">ФЁДОР&nbsp;КЛУШИН <b>/ BRAND + DIGITAL</b></a>
+<header class="site-header site-header--scene">
+  <a class="site-header__mark" href="../index.html">ФЁДОР КЛУШИН</a>
   <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Меню">
     <span></span><span></span>
   </button>
   <nav class="site-nav" id="site-nav">
-    <a href="../index.html#work" aria-current="page">Работы</a>
     <a href="../about.html">О себе</a>
+    <a href="../works.html" aria-current="page">Работы</a>
     <a href="../contacts.html">Контакты</a>
   </nav>
-  <span class="site-header__clock" id="clock" aria-hidden="true">СПб&nbsp;—:—</span>
 </header>
 <main id="main">
+  <a class="case-back" href="../works.html">← Все работы</a>
   <section class="case-hero">
     <p class="case-hero__kicker">Packaging &amp; brand system · препресс · 2026</p>
     <h1>Alea Linen</h1>
     <p class="case-hero__lead">Фирменный стиль и <b>система носителей</b> для бренда домашнего льна: палитра с точными CMYK, редакционная типографика, авторский знак и печатные макеты, готовые к тиражу.</p>
+    <a class="outline-button outline-button--accent case-download" href="../assets/cases/alea-linen/portfolio-watermarked.pdf" download="Fedor-Klushin-Alea-Linen.pdf" aria-label="Скачать кейс Alea Linen в PDF">Скачать PDF <span aria-hidden="true">↓</span></a>
   </section>
 
   <dl class="case-meta">
@@ -88,7 +90,6 @@
 <section class="archive reveal">
   <div class="archive__head">
     <span>Полные развороты гайдлайнов</span>
-    <a class="archive__dl" href="../assets/cases/alea-linen/Alea-Linen-brand-guidelines.pdf" download>Скачать PDF</a>
   </div>
   <div class="sheet sheet--wide">
     <button class="sheet__cell" data-full="../assets/cases/alea-linen/pdf/board-1.jpg" aria-label="Alea Linen — разворот 1"><img src="../assets/cases/alea-linen/pdf/thumbs/board-1.jpg" alt="Alea Linen — разворот 1" loading="lazy"></button>
@@ -111,12 +112,13 @@
       <a href="mailto:fedor2007kl@gmail.com">fedor2007kl@gmail.com</a>
       <a href="tel:+79500370890">+7 950 037-08-90</a>
       <a href="https://t.me/fod1k" target="_blank" rel="noopener">Telegram @fod1k</a>
-      <a href="https://www.behance.net/fedorklushin" target="_blank" rel="noopener">Behance</a>
       <a href="https://dprofile.ru/fedorkl" target="_blank" rel="noopener">Dprofile</a>
     </div>
   </div>
   <p class="site-footer__note">© 2026 Фёдор Клушин · Санкт-Петербург / удалённо</p>
 </footer>
+<script src="../js/i18n-data.js"></script>
+<script src="../js/i18n.js"></script>
 <script src="../js/site.js"></script>
 </body>
 </html>

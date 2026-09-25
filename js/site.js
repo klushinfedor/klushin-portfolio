@@ -9,14 +9,29 @@
   var toggle = document.querySelector(".nav-toggle");
   var nav = document.getElementById("site-nav");
   if (toggle && nav) {
-    toggle.addEventListener("click", function () {
-      var open = nav.classList.toggle("is-open");
+    var setNavOpen = function (open) {
+      nav.classList.toggle("is-open", open);
       toggle.setAttribute("aria-expanded", String(open));
+      var label = open ? "Закрыть меню" : "Открыть меню";
+      toggle.setAttribute("aria-label", window.PortfolioI18n ? window.PortfolioI18n.t(label) : label);
+    };
+    toggle.addEventListener("click", function () {
+      setNavOpen(!nav.classList.contains("is-open"));
     });
     nav.addEventListener("click", function (e) {
       if (e.target.tagName === "A") {
-        nav.classList.remove("is-open");
-        toggle.setAttribute("aria-expanded", "false");
+        setNavOpen(false);
+      }
+    });
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape" && nav.classList.contains("is-open")) {
+        setNavOpen(false);
+        toggle.focus();
+      }
+    });
+    document.addEventListener("click", function (e) {
+      if (nav.classList.contains("is-open") && !nav.contains(e.target) && !toggle.contains(e.target)) {
+        setNavOpen(false);
       }
     });
   }
@@ -144,4 +159,23 @@
       if (e.key === "Escape") close();
     });
   }
+
+  /* Quiet exit before same-site page navigation; native navigation remains the fallback. */
+  var leaving = false;
+  document.addEventListener("click", function (e) {
+    var link = e.target.closest && e.target.closest("a[href]");
+    if (!link || e.defaultPrevented || e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey || reduce || leaving) return;
+    if (link.hasAttribute("download") || (link.target && link.target !== "_self")) return;
+    var dest = new URL(link.href, window.location.href);
+    if (dest.protocol !== window.location.protocol || dest.host !== window.location.host) return;
+    if (dest.pathname === window.location.pathname && dest.search === window.location.search) return;
+    e.preventDefault();
+    leaving = true;
+    document.body.classList.add("is-leaving");
+    setTimeout(function () { window.location.assign(dest.href); }, 320);
+  });
+  window.addEventListener("pageshow", function () {
+    leaving = false;
+    document.body.classList.remove("is-leaving");
+  });
 })();

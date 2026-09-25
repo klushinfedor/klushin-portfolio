@@ -11,27 +11,29 @@
 <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Unbounded:wght@600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../css/styles.css">
+<link rel="stylesheet" href="../css/redesign.css">
 </head>
-<body>
+<body class="page-case-redesign">
 <div class="grain" aria-hidden="true"></div>
 <a class="skip-link" href="#main">К содержанию</a>
-<header class="site-header">
-  <a class="site-header__mark" href="../index.html">ФЁДОР&nbsp;КЛУШИН <b>/ BRAND + DIGITAL</b></a>
+<header class="site-header site-header--scene">
+  <a class="site-header__mark" href="../index.html">ФЁДОР КЛУШИН</a>
   <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Меню">
     <span></span><span></span>
   </button>
   <nav class="site-nav" id="site-nav">
-    <a href="../index.html#work" aria-current="page">Работы</a>
     <a href="../about.html">О себе</a>
+    <a href="../works.html" aria-current="page">Работы</a>
     <a href="../contacts.html">Контакты</a>
   </nav>
-  <span class="site-header__clock" id="clock" aria-hidden="true">СПб&nbsp;—:—</span>
 </header>
 <main id="main">
+  <a class="case-back" href="../works.html">← Все работы</a>
   <section class="case-hero">
     <p class="case-hero__kicker">E-commerce web design · UI/UX · 2025–2026</p>
     <h1>NŌRA Studio</h1>
     <p class="case-hero__lead">Концепт-проект: <b>визуальная система</b> интернет-магазина для бренда базовой одежды из органического хлопка — от философии материала до карточки товара с конфигуратором и мобильной версии.</p>
+    <a class="outline-button outline-button--accent case-download" href="../assets/cases/nora-studio/portfolio-watermarked.pdf" download="Fedor-Klushin-NORA-Studio.pdf" aria-label="Скачать кейс NŌRA Studio в PDF">Скачать PDF <span aria-hidden="true">↓</span></a>
   </section>
 
   <dl class="case-meta">
@@ -39,7 +41,7 @@
     <div><dt>Скоуп</dt><dd>Главная · карточка товара · конфигуратор · «О бренде» · контакты · мобильная версия</dd></div>
     <div><dt>Инструменты</dt><dd>Figma · AI image tools</dd></div>
     <div><dt>Формат</dt><dd>E-commerce visual system · portfolio concept</dd></div>
-    <p class="note">// Independent concept — self-initiated visual study. Бренд Mira Shirt вымышленный.</p>
+    <p class="note">// Самостоятельный концепт-проект. Бренд NŌRA Studio создан для демонстрации интерфейса.</p>
   </dl>
 
   <div class="story">
@@ -96,7 +98,6 @@
 <section class="archive reveal">
   <div class="archive__head">
     <span>Полный набор экранов · 22 разворота</span>
-    <a class="archive__dl" href="../assets/cases/nora-studio/NORA-Studio-ecommerce.pdf" download>Скачать PDF</a>
   </div>
   <div class="sheet">
     <button class="sheet__cell" data-full="../assets/cases/nora-studio/pdf/screen-01.jpg" aria-label="NŌRA — экран 1"><img src="../assets/cases/nora-studio/pdf/thumbs/screen-01.jpg" alt="NŌRA — экран 1" loading="lazy"></button>
@@ -139,12 +140,13 @@
       <a href="mailto:fedor2007kl@gmail.com">fedor2007kl@gmail.com</a>
       <a href="tel:+79500370890">+7 950 037-08-90</a>
       <a href="https://t.me/fod1k" target="_blank" rel="noopener">Telegram @fod1k</a>
-      <a href="https://www.behance.net/fedorklushin" target="_blank" rel="noopener">Behance</a>
       <a href="https://dprofile.ru/fedorkl" target="_blank" rel="noopener">Dprofile</a>
     </div>
   </div>
   <p class="site-footer__note">© 2026 Фёдор Клушин · Санкт-Петербург / удалённо</p>
 </footer>
+<script src="../js/i18n-data.js"></script>
+<script src="../js/i18n.js"></script>
 <script src="../js/site.js"></script>
 </body>
 </html>

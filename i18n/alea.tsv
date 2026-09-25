@@ -1,0 +1,30 @@
+Packaging & brand system · препресс · 2026	Ambalaža i brend sistem · priprema za štampu · 2026	Packaging & brand system · prepress · 2026
+Фирменный стиль и	Vizuelni identitet i	Brand identity and
+система носителей	sistem materijala	touchpoint system
+для бренда домашнего льна: палитра с точными CMYK, редакционная типографика, авторский знак и печатные макеты, готовые к тиражу.	za brend kućnog tekstila: CMYK paleta, urednička tipografija, autorski znak i dizajn pripremljen za štampu.	for a home linen brand: a CMYK palette, editorial typography, an original mark and print-ready layouts.
+Айдентика носителей · макеты · препресс	Identitet materijala · dizajn · priprema za štampu	Touchpoint identity · layouts · prepress
+Логотип · гайдлайны · палитра · care card · thank-you card · belly band · этикетки · стикеры	Logotip · smernice · paleta · kartica za negu · zahvalnica · omot · etikete · nalepnice	Logo · guidelines · palette · care card · thank-you card · belly band · labels · stickers
+Figma · Illustrator · Photoshop	Figma · Illustrator · Photoshop	Figma · Illustrator · Photoshop
+Brand system + print-ready · AI · EPS · SVG · PDF/X-4	Brend sistem + priprema za štampu · AI · EPS · SVG · PDF/X-4	Brand system + print-ready · AI · EPS · SVG · PDF/X-4
+// Личный проект — концепт бренда домашнего текстиля.	// Lični projekat — koncept brenda kućnog tekstila.	// Personal project — a home textile brand concept.
+01 — Палитра	01 — Paleta	01 — Palette
+Тёплые природные нейтрали	Topli prirodni neutralni tonovi	Warm natural neutrals
+Четыре оттенка: бумага, лён, флакс, графит. Значения CMYK — стартовые: перед тиражом обязателен цветопробный отпечаток на выбранной бумаге, конвертация по ICC-профилю типографии.	Četiri nijanse: papir, lan, svetli lan i grafit. CMYK vrednosti su početne; pre tiraža treba uraditi probni otisak na izabranom papiru i konverziju prema ICC profilu štamparije.	Four shades: paper, linen, flax and charcoal. CMYK values are starting points; a proof on the chosen paper and conversion to the printer's ICC profile are required before production.
+Paper · Тёплый белый	Paper · Topla bela	Paper · Warm white
+Linen · Льняной	Linen · Lanena	Linen · Linen
+Flax · Лён	Flax · Lan	Flax · Flax
+Charcoal · Графит	Charcoal · Grafit	Charcoal · Charcoal
+02 — Типографика	02 — Tipografija	02 — Typography
+Редакционный голос, служебная ясность	Urednički ton, jasne informacije	Editorial voice, practical clarity
+Антиква для голоса бренда, Inter — для инструкций и мелких этикеток. Medium — логотип и заголовки, Regular — поддерживающие фразы, Italic — только имя основателя.	Serifni font daje glas brendu, a Inter služi za uputstva i sitne etikete. Medium je za logotip i naslove, Regular za prateći tekst, Italic samo za ime osnivača.	Serif type gives the brand its voice; Inter handles instructions and small labels. Medium is for the logo and headings, Regular for supporting copy, Italic only for the founder's name.
+03 — Логотип и знак	03 — Logotip i znak	03 — Logo and mark
+Две компоновки и веточка льна	Dva rasporeda i grančica lana	Two lockups and a flax branch
+Два утверждённых лок-апа логотипа — вертикальный и в строку. Плюс авторская векторная веточка льна: тонкая незалитая линия, только в цветах Charcoal или Flax.	Dve odobrene kompozicije logotipa — vertikalna i horizontalna. Tu je i autorska vektorska grančica lana: tanka linija bez ispune, samo u bojama Charcoal ili Flax.	Two approved logo lockups — stacked and horizontal. An original vector flax branch uses a fine unfilled line, only in Charcoal or Flax.
+04 — Символы ухода	04 — Simboli za negu	04 — Care symbols
+Пиктограммы дополняют, не заменяют	Piktogrami dopunjuju, ne zamenjuju	Pictograms support, not replace
+Собственные линейные символы ухода идут рядом с текстовой инструкцией: стирка 40°, без отбеливания, утюг на средней температуре, естественная сушка.	Autorski linijski simboli stoje uz tekstualna uputstva: pranje na 40°, bez izbeljivača, peglanje na srednjoj temperaturi i prirodno sušenje.	Custom line icons sit beside written instructions: wash at 40°, no bleach, medium iron and air dry.
+05 — Подготовка к печати	05 — Priprema za štampu	05 — Print preparation
+Файлы, готовые к тиражу	Fajlovi spremni za štampu	Files ready for production
+Физические размеры каждого носителя, вылеты 3 мм, safe zone, радиусы и отверстия. Технические слои (cut · drill · fold · safe · notes) не печатаются. Финал — PDF/X-4, true CMYK, AI и EPS.	Fizičke dimenzije svakog elementa, prepust od 3 mm, bezbedna zona, radijusi i otvori. Tehnički slojevi (cut · drill · fold · safe · notes) ne štampaju se. Finalni fajl je PDF/X-4, sa crnom prema profilu štamparije.	Physical sizes for every piece, 3 mm bleed, safe zones, radii and holes. Technical layers (cut · drill · fold · safe · notes) do not print. Final files are PDF/X-4 with black adjusted to the printer's profile.
+Полные развороты гайдлайнов	Kompletne strane smernica	Full guideline spreads
+
