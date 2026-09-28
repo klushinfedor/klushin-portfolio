@@ -19,7 +19,7 @@
   function move(board, direction) {
     if (!["left", "right", "up", "down"].includes(direction)) throw new Error("Invalid direction");
     var next = board.map(function (row) { return row.slice(); });
-    var gained = 0, moved = false;
+    var gained = 0, moved = false, transitions = [];
     for (var lane = 0; lane < 4; lane++) {
       var positions = [];
       for (var i = 0; i < 4; i++) {
@@ -28,11 +28,15 @@
         if (direction === "up") positions.push([i, lane]);
         if (direction === "down") positions.push([3 - i, lane]);
       }
-      var values = positions.map(function (p) { return board[p[0]][p[1]]; }).filter(Boolean);
+      var sources = positions.filter(function (p) { return board[p[0]][p[1]]; });
+      var values = sources.map(function (p) { return board[p[0]][p[1]]; });
       var merged = [];
       for (var j = 0; j < values.length; j++) {
+        var target = positions[merged.length];
+        transitions.push({ from: sources[j], to: target, value: values[j] });
         if (values[j] === values[j + 1]) {
           var sum = values[j] * 2;
+          transitions.push({ from: sources[j + 1], to: target, value: values[j + 1] });
           merged.push(sum); gained += sum; j++;
         } else merged.push(values[j]);
       }
@@ -42,7 +46,7 @@
         next[p[0]][p[1]] = merged[k];
       });
     }
-    return { board: next, score: gained, moved: moved };
+    return { board: next, score: gained, moved: moved, transitions: transitions };
   }
   function canMove(board) {
     for (var r = 0; r < 4; r++) for (var c = 0; c < 4; c++) {
@@ -54,4 +58,3 @@
   }
   return { emptyBoard: emptyBoard, addTile: addTile, initial: initial, move: move, canMove: canMove };
 });
-

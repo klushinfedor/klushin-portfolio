@@ -108,7 +108,7 @@ CASES = [
             ("Инструменты", "Figma · Illustrator · Photoshop"),
             ("Формат", "Brand system + print-ready · AI · EPS · SVG · PDF/X-4"),
         ],
-        "note": "// Личный проект — концепт бренда домашнего текстиля.",
+        "note": "// Клиентский заказ — айдентика и материалы для печати.",
         "sections": [
             {"label": "01 — Палитра", "h": "Тёплые природные нейтрали",
              "p": "Четыре оттенка: бумага, лён, флакс, графит. Значения CMYK — стартовые: перед тиражом обязателен "
@@ -138,7 +138,7 @@ CASES = [
              "imgs": [("alea-linen/pdf/a4-print.jpg", "Alea Linen — подготовка к печати, спецификация")]},
         ],
         "archive": {"title": "Полные развороты гайдлайнов", "wide": True,
-                    "pdf": "assets/cases/alea-linen/Alea-Linen-brand-guidelines.pdf",
+                    "pdf": "assets/cases/alea-linen/portfolio-watermarked.pdf",
                     "items": [("alea-linen/pdf/thumbs/board-1.jpg", "alea-linen/pdf/board-1.jpg", "Alea Linen — разворот 1"),
                               ("alea-linen/pdf/thumbs/board-2.jpg", "alea-linen/pdf/board-2.jpg", "Alea Linen — разворот 2")]},
     },
@@ -147,15 +147,15 @@ CASES = [
         "tag": "Визуальная система · брендбук · арт-дирекшн",
         "thumb": "assets/cases/off-hours/thumb.jpg",
         "kicker": "Fashion visual identity · art direction · 2026",
-        "lead": 'Личный концепт-проект: <b>визуальная система</b> одёжного бренда — '
+        "lead": 'Проект для Primography: <b>визуальная система</b> одёжного бренда — '
                 'от материала и силуэта до айдентики, луков, упаковки и digital.',
         "meta": [
             ("Роль", "Visual research · арт-дирекшн · fashion-айдентика · упаковка · digital"),
-            ("Скоуп", "Концепт · муд-борд · материалы · стайлинг · луки · логотип · упаковка · соцсети"),
+            ("Скоуп", "Исследование · муд-борд · материалы · стайлинг · луки · логотип · упаковка · соцсети"),
             ("Инструменты", "Figma · Photoshop · Illustrator · AI image tools"),
             ("Формат", "Sketchbook / visual register — 15 разворотов, AW26"),
         ],
-        "note": "// Independent concept — self-initiated visual study, AW26.",
+        "note": "// Разработано в Primography — визуальное исследование и айдентика, AW26.",
         "sections": [
             {"label": "01 — Материал", "h": "Отправная точка — не цвет, а ткань",
              "p": "Палитра собрана от материала: девять оттенков привязаны к органическому хлопку, вареному индиго и "
@@ -184,7 +184,7 @@ CASES = [
              "imgs": [("off-hours/pdf/spread-14.jpg", "OFF HOURS — digital-применения")]},
         ],
         "archive": {"title": "Полный визуальный архив · 15 разворотов",
-                    "pdf": "assets/cases/off-hours/OFF-HOURS-visual-research.pdf",
+                    "pdf": "assets/cases/off-hours/portfolio-watermarked.pdf",
                     "items": [(f"off-hours/pdf/thumbs/spread-{i:02d}.jpg", f"off-hours/pdf/spread-{i:02d}.jpg",
                                f"OFF HOURS — разворот {i}") for i in range(1, 16)]},
     },
@@ -193,15 +193,15 @@ CASES = [
         "tag": "UI/UX · e-commerce веб-дизайн",
         "thumb": "assets/cases/nora-studio/thumb.jpg",
         "kicker": "E-commerce web design · UI/UX · 2025–2026",
-        "lead": 'Концепт-проект: <b>визуальная система</b> интернет-магазина для бренда базовой одежды из '
+        "lead": 'Клиентский проект: <b>визуальная система</b> интернет-магазина для бренда базовой одежды из '
                 'органического хлопка — от философии материала до карточки товара с конфигуратором и мобильной версии.',
         "meta": [
             ("Роль", "UI/UX · веб-дизайн · адаптивные сетки · состояния интерфейса"),
             ("Скоуп", "Главная · карточка товара · конфигуратор · «О бренде» · контакты · мобильная версия"),
             ("Инструменты", "Figma · AI image tools"),
-            ("Формат", "E-commerce visual system · portfolio concept"),
+            ("Формат", "E-commerce visual system · client project"),
         ],
-        "note": "// Independent concept — self-initiated visual study. Бренд Mira Shirt вымышленный.",
+        "note": "// Дизайн интернет-магазина для заказчика: макеты страниц и мобильной версии.",
         "sections": [
             {"label": "01 — Материал", "h": "Философия начинается с нитки",
              "p": "100% органический хлопковый поплин: плотное плетение держит форму, но дышит. Три тезиса — ткань, "
@@ -231,7 +231,7 @@ CASES = [
              "imgs": [("nora-studio/pdf/screen-08.jpg", "NŌRA — страница «О бренде»")], "tall": True},
         ],
         "archive": {"title": "Полный набор экранов · 22 разворота",
-                    "pdf": "assets/cases/nora-studio/NORA-Studio-ecommerce.pdf",
+                    "pdf": "assets/cases/nora-studio/portfolio-watermarked.pdf",
                     "items": [(f"nora-studio/pdf/thumbs/screen-{i:02d}.jpg", f"nora-studio/pdf/screen-{i:02d}.jpg",
                                f"NŌRA — экран {i}") for i in range(1, 23)]},
     },
