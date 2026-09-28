@@ -20,4 +20,4 @@
 Figma, Adobe Photoshop, Illustrator, After Effects, Premiere Pro, Media Encoder.
 
 ## Портфолио
-[Открыть сайт-портфолио](https://fedor2007kl-afk.github.io/klushin-portfolio/)
+[Открыть сайт-портфолио](https://klushinfedor.github.io/klushin-portfolio/)
