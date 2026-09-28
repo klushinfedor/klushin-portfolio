@@ -6,6 +6,16 @@
 })(typeof window !== "undefined" ? window : globalThis, function () {
   "use strict";
   function emptyBoard() { return Array.from({ length: 4 }, function () { return [0, 0, 0, 0]; }); }
+  function seededRandom(seed) {
+    var state = seed >>> 0;
+    if (!state) throw new Error("Zero seed");
+    function random() {
+      state ^= state << 13; state ^= state >>> 17; state ^= state << 5;
+      return (state >>> 0) / 4294967296;
+    }
+    random.state = function () { return state >>> 0; };
+    return random;
+  }
   function addTile(board, random) {
     var cells = [];
     for (var r = 0; r < 4; r++) for (var c = 0; c < 4; c++) if (!board[r][c]) cells.push([r, c]);
@@ -56,5 +66,5 @@
     }
     return false;
   }
-  return { emptyBoard: emptyBoard, addTile: addTile, initial: initial, move: move, canMove: canMove };
+  return { emptyBoard: emptyBoard, seededRandom: seededRandom, addTile: addTile, initial: initial, move: move, canMove: canMove };
 });

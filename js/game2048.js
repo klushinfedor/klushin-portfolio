@@ -5,8 +5,12 @@
   if (!core || !boardNode) return;
   var scoreNode = document.getElementById("score");
   var bestNode = document.getElementById("best");
+  var globalNode = document.getElementById("global-best");
   var status = document.getElementById("game-status");
   var board = core.initial(), score = 0, best = 0, celebrated = false, ended = false;
+  var api = (window.PORTFOLIO_GAME_API || "").replace(/\/$/, "");
+  var globalBest = null, session = null, random = null, remoteTurn = 0;
+  var pendingMoves = [], sending = false, startingRemote = false, remoteReady = !api, retryTimer = 0;
   var moving = false, motionTimer = 0, motionToken = 0, pendingDirection = null;
   var motionDuration = 190;
   var statusKey = "← ↑ ↓ → или свайп на телефоне";
@@ -26,6 +30,7 @@
         if (value) {
           cell.textContent = value;
           cell.dataset.value = value;
+          if (value > 2048) cell.classList.add("game-cell--super");
           if (value >= 1024) cell.dataset.large = "true";
           if (spawn && spawn[0] === r && spawn[1] === c) cell.classList.add("is-spawned");
         }
@@ -34,6 +39,7 @@
     });
     scoreNode.textContent = score;
     bestNode.textContent = best;
+    globalNode.textContent = globalBest === null ? "—" : globalBest;
   }
   function cancelMotion() {
     motionToken++;
@@ -62,6 +68,7 @@
       var tile = document.createElement("div");
       tile.className = "game-cell game-tile-flight";
       tile.dataset.value = step.value;
+      if (step.value > 2048) tile.classList.add("game-cell--super");
       if (step.value >= 1024) tile.dataset.large = "true";
       tile.textContent = step.value;
       tile.style.left = (from.left - boardRect.left) + "px";
@@ -87,6 +94,7 @@
     }, motionDuration);
   }
   function play(direction) {
+    if (!remoteReady) return;
     if (moving) { pendingDirection = direction; return; }
     if (ended) return;
     var result = core.move(board, direction);
@@ -102,7 +110,7 @@
     var reached = !celebrated && board.some(function (row) { return row.some(function (v) { return v >= 2048; }); });
     if (reached) celebrated = true;
     var beforeSpawn = board.map(function (row) { return row.slice(); });
-    core.addTile(board);
+    core.addTile(board, random || Math.random);
     var spawn = null;
     board.forEach(function (row, r) { row.forEach(function (value, c) {
       if (!beforeSpawn[r][c] && value) spawn = [r, c];
@@ -117,6 +125,91 @@
     }
     render();
     animateMove(result.transitions, oldRects, spawn);
+    if (session) {
+      pendingMoves.push({ left: "L", right: "R", up: "U", down: "D" }[direction]);
+      // The server replays these moves from its own stored board; no score is sent.
+      if (!sending) { clearTimeout(retryTimer); retryTimer = setTimeout(flushMoves, 220); }
+    }
+  }
+  async function request(path, options) {
+    var response = await fetch(api + path, Object.assign({ cache: "no-store", headers: { "Content-Type": "application/json" } }, options || {}));
+    var data = await response.json();
+    if (!response.ok) { var error = new Error(data.error || "Network error"); error.data = data; error.code = response.status; throw error; }
+    return data;
+  }
+  function updateGlobal(value) {
+    if (Number.isSafeInteger(value) && value >= 0) {
+      globalBest = Math.max(globalBest || 0, value);
+      globalNode.textContent = globalBest;
+    }
+  }
+  async function fetchGlobal() {
+    if (!api) return;
+    try { updateGlobal((await request("/record")).record); } catch (e) { /* Keep the last known record. */ }
+  }
+  async function startRemoteGame() {
+    if (!api || startingRemote) return;
+    startingRemote = true;
+    clearTimeout(retryTimer);
+    try {
+      if (session && pendingMoves.length) {
+        await flushMoves();
+        if (pendingMoves.length) {
+          setStatus("Связь с рекордом прервалась. Ходы сохраняются до повторной отправки.");
+          return;
+        }
+      }
+      remoteReady = false;
+      var data = await request("/session", { method: "POST", body: "{}" });
+      cancelMotion();
+      session = data.id; random = core.seededRandom(data.seed);
+      board = core.initial(random); score = 0; ended = false; celebrated = false;
+      remoteTurn = 0; pendingMoves = [];
+      updateGlobal(data.record); remoteReady = true;
+      setStatus("Новая игра. ← ↑ ↓ → или свайп на телефоне");
+      render(); boardNode.focus();
+    } catch (e) {
+      remoteReady = false;
+      setStatus("Не удалось подключиться к игре. Нажмите «Новая игра», чтобы повторить.");
+    } finally {
+      startingRemote = false;
+    }
+  }
+  async function flushMoves() {
+    if (!api || !session || sending || !pendingMoves.length) return;
+    sending = true;
+    var id = session;
+    var from = remoteTurn;
+    var moves = pendingMoves.slice(0, 64).join("");
+    try {
+      var data = await request("/moves", { method: "POST", body: JSON.stringify({ id: id, from: from, moves: moves }) });
+      if (id !== session) return;
+      if (data.turn !== from + moves.length || data.score > score) throw new Error("Server state mismatch");
+      remoteTurn = data.turn;
+      pendingMoves.splice(0, moves.length);
+      updateGlobal(data.record);
+    } catch (e) {
+      if (id !== session) return;
+      if (e.code === 409 && e.data && e.data.turn > from && e.data.turn <= from + moves.length) {
+        var accepted = e.data.turn - from;
+        pendingMoves.splice(0, accepted);
+        remoteTurn = e.data.turn;
+        updateGlobal(e.data.record);
+      } else if (e.code === 404 || e.code === 400) {
+        remoteReady = false;
+        session = null;
+        pendingMoves = [];
+        setStatus("Проверка ходов не прошла. Нажмите «Новая игра», чтобы начать заново.");
+      } else {
+        setStatus("Связь с рекордом прервалась. Ходы сохраняются до повторной отправки.");
+      }
+    } finally {
+      sending = false;
+      if (id === session && remoteReady && pendingMoves.length) {
+        clearTimeout(retryTimer);
+        retryTimer = setTimeout(flushMoves, 1800);
+      }
+    }
   }
   var directions = { ArrowLeft: "left", ArrowRight: "right", ArrowUp: "up", ArrowDown: "down" };
   document.addEventListener("keydown", function (event) {
@@ -138,6 +231,7 @@
     play(Math.abs(dx) > Math.abs(dy) ? (dx > 0 ? "right" : "left") : (dy > 0 ? "down" : "up"));
   }, { passive: true });
   document.getElementById("new-game").addEventListener("click", function () {
+    if (api) { startRemoteGame(); return; }
     cancelMotion();
     board = core.initial(); score = 0; celebrated = false; ended = false;
     setStatus("Новая игра. ← ↑ ↓ → или свайп на телефоне");
@@ -150,4 +244,10 @@
     bestNode.textContent = best;
   });
   render();
+  if (api) {
+    startRemoteGame();
+    fetchGlobal();
+    setInterval(fetchGlobal, 30000);
+    document.addEventListener("visibilitychange", function () { if (!document.hidden) { fetchGlobal(); flushMoves(); } });
+  }
 })();

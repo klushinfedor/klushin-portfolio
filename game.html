@@ -16,12 +16,13 @@
   <section class="game-shell" aria-label="Игра 2048">
     <div class="game-shell__top">
       <div class="game-score"><span>Счёт</span><strong id="score">0</strong></div>
-      <div class="game-score"><span>Рекорд</span><strong id="best">0</strong></div>
+      <div class="game-score"><span>Мой рекорд</span><strong id="best">0</strong></div>
+      <div class="game-score game-score--global"><span>Рекорд сайта</span><strong id="global-best">—</strong></div>
       <button class="game-reset" id="new-game" type="button">Новая игра ↻</button>
     </div>
     <div class="game-board" id="game-board" role="grid" aria-label="Поле 2048, четыре на четыре" tabindex="0"></div>
     <p class="game-status" id="game-status" role="status" aria-live="polite">← ↑ ↓ → или свайп на телефоне</p>
-    <p class="game-record-note">Рекорд сохраняется в этом браузере и обновляется, только когда вы его побьёте.</p>
+    <p class="game-record-note">Мой рекорд хранится в этом браузере. Рекорд сайта виден всем после проверки ходов.</p>
   </section>
   <a class="game-scene__back" href="contacts.html">← Вернуться к контактам</a>
   <a class="game-scene__home" href="index.html">В начало ↑</a>
@@ -30,6 +31,7 @@
 <script src="js/i18n.js"></script>
 <script src="js/site.js"></script>
 <script src="js/game-core.js"></script>
+<script src="js/game-config.js"></script>
 <script src="js/game2048.js"></script>
 </body>
 </html>

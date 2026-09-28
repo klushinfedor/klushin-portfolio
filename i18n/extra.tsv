@@ -1,6 +1,9 @@
 Новая игра. ← ↑ ↓ → или свайп на телефоне	Nova igra. ← ↑ ↓ → ili prevlačenje na telefonu	New game. ← ↑ ↓ → or swipe on your phone
 Ходов больше нет. Начните новую игру.	Nema više poteza. Započnite novu igru.	No moves left. Start a new game.
 2048! Можно играть дальше сколько угодно.	2048! Možete da nastavite koliko želite.	2048! Keep playing as long as you like.
+Не удалось подключиться к игре. Нажмите «Новая игра», чтобы повторить.	Nije moguće povezati se sa igrom. Pritisnite „Nova igra“ da pokušate ponovo.	Could not connect to the game. Press “New game” to try again.
+Проверка ходов не прошла. Нажмите «Новая игра», чтобы начать заново.	Provera poteza nije uspela. Pritisnite „Nova igra“ da počnete ponovo.	Move verification failed. Press “New game” to restart.
+Связь с рекордом прервалась. Ходы сохраняются до повторной отправки.	Veza sa rekordom je prekinuta. Potezi čekaju ponovno slanje.	Record connection lost. Moves are queued for another attempt.
 Открыть меню	Otvori meni	Open menu
 Закрыть меню	Zatvori meni	Close menu
 Основная навигация	Glavna navigacija	Main navigation
@@ -12,4 +15,3 @@
 Контакты — Фёдор Клушин	Kontakt — Fjodor Klušin	Contact — Fedor Klushin
 Игра 2048 — Фёдор Клушин	2048 igra — Fjodor Klušin	2048 game — Fedor Klushin
 Фёдор Клушин — графический и веб-дизайнер	Fjodor Klušin — grafički i veb dizajner	Fedor Klushin — graphic and web designer
-
