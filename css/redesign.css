@@ -622,6 +622,7 @@
   position: relative;
   display: grid;
   grid-template-columns: repeat(4, minmax(0,1fr));
+  grid-template-rows: repeat(4, minmax(0,1fr));
   gap: clamp(.38rem,1vw,.65rem);
   margin-top: .7rem;
   padding: clamp(.38rem,1vw,.65rem);
