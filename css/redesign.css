@@ -761,3 +761,6 @@
 .case-inquiry__prices{display:inline-flex;align-items:center;gap:.5rem;min-height:48px;font-size:1rem;text-decoration:underline;text-underline-offset:.3em;}
 .case-inquiry a:focus-visible{outline:3px solid #3932a2;outline-offset:5px;}
 @media(max-width:480px){.case-inquiry__actions{align-items:stretch;flex-direction:column;gap:.75rem;}.case-inquiry__primary{width:100%;}.case-inquiry__primary span:first-child{min-width:0;overflow-wrap:anywhere;}.case-inquiry__primary span:last-child{flex-shrink:0;}}
+
+.works-outro__actions{display:flex;flex-wrap:wrap;align-items:center;gap:1rem;}
+@media(max-width:480px){.works-outro__actions{align-items:stretch;flex-direction:column;}.works-outro__actions .outline-button{justify-content:center;max-width:100%;}}
