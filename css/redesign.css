@@ -751,3 +751,13 @@
   .site-header--scene .site-nav { order: 3; }
   .lang-switcher__trigger { min-height: 2.8rem; }
 }
+
+/* A clear next step after each case, before project navigation. */
+.case-inquiry{margin:clamp(2.5rem,5vw,5rem) var(--pad);padding:clamp(1.5rem,4vw,3.5rem);background:#efecf7;color:#171724;border-radius:1.5rem;}
+.case-inquiry h2{font-family:"Golos Text",system-ui,sans-serif;font-size:clamp(1.75rem,3.5vw,3rem);font-weight:600;line-height:1.15;letter-spacing:-.04em;text-transform:none;margin-bottom:1.5rem;}
+.case-inquiry__actions{display:flex;align-items:center;flex-wrap:wrap;gap:1rem 2rem;}
+.case-inquiry__primary{display:inline-flex;align-items:center;justify-content:space-between;gap:1.5rem;min-height:52px;padding:1rem 1.5rem;border-radius:999px;background:#3932a2;color:#fff;font-family:"Golos Text",system-ui,sans-serif;font-size:1rem;font-weight:500;line-height:1.4;}
+.case-inquiry__primary:hover{background:#292374;}
+.case-inquiry__prices{display:inline-flex;align-items:center;gap:.5rem;min-height:48px;font-size:1rem;text-decoration:underline;text-underline-offset:.3em;}
+.case-inquiry a:focus-visible{outline:3px solid #3932a2;outline-offset:5px;}
+@media(max-width:480px){.case-inquiry__actions{align-items:stretch;flex-direction:column;gap:.75rem;}.case-inquiry__primary{width:100%;}.case-inquiry__primary span:first-child{min-width:0;overflow-wrap:anywhere;}.case-inquiry__primary span:last-child{flex-shrink:0;}}
