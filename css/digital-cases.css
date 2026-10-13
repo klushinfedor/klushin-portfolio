@@ -1,0 +1,39 @@
+/* Additive styles: existing case pages and work rows retain their layout. */
+.digital-projects .section__head { align-items: baseline; gap: 1rem; }
+.digital-projects .section__head h2 { font: inherit; letter-spacing: inherit; margin: 0; max-width: 42ch; }
+.digital-projects__grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: clamp(1.5rem, 4vw, 4rem); }
+.digital-project { min-width: 0; padding-top: 1.5rem; border-top: 1px solid var(--line); }
+.digital-project__visual { display: flex; height: clamp(18rem, 32vw, 30rem); overflow: hidden; align-items: center; justify-content: center; text-decoration: none; }
+.digital-project__visual--graphite { background: #0e1118; }
+.digital-project__visual--graphite img { height: auto; width: 92%; object-fit: contain; border: 1px solid #394156; border-radius: .6rem; }
+.digital-project__visual--bot { background: #eeedf7; color: #4031a4; flex-direction: column; padding: 2rem; gap: 1.5rem; }
+.digital-project__monogram { font-family: 'Golos Text', system-ui, sans-serif; font-size: clamp(5rem, 9vw, 9rem); font-weight: 600; letter-spacing: -.09em; line-height: 1; }
+.digital-project__monogram > span { font-size: .5em; vertical-align: top; margin-left: .2em; }
+.digital-project__workflow { font-family: var(--font-mono); text-align: center; font-size: .8rem; }
+.digital-project__tag { color: var(--muted); font-size: .7rem; text-transform: uppercase; letter-spacing: .08em; margin-top: 1.5rem; }
+.digital-project h3 { font-family: 'Golos Text', system-ui, sans-serif; font-size: clamp(1.8rem, 3.4vw, 3.5rem); letter-spacing: -.055em; line-height: 1.08; margin: .6rem 0 1rem; overflow-wrap: anywhere; }
+.digital-project h3 a { text-decoration: none; }
+.digital-project__description { color: var(--muted); max-width: 44ch; font-size: 1rem; line-height: 1.5; }
+.digital-project__link { display: inline-block; margin-top: 1.1rem; color: var(--accent); text-underline-offset: .3em; }
+.digital-project__visual:focus-visible { outline: 3px solid var(--accent); outline-offset: 4px; }
+.digital-case .case-hero h1 { text-transform: none; font-size: clamp(2.5rem, 8vw, 8rem); line-height: 1.02; max-width: 17ch; overflow-wrap: anywhere; }
+.digital-case__body { padding: 0 var(--pad) clamp(3rem, 6vw, 6rem); display: grid; gap: clamp(2.5rem, 5vw, 5rem); }
+.digital-story { border-top: 1px solid var(--line); padding-top: 1.4rem; min-width: 0; }
+.digital-story h2 { font-family: 'Golos Text', system-ui, sans-serif; font-size: clamp(1.5rem, 3vw, 2.8rem); letter-spacing: -.05em; margin-bottom: 1.3rem; }
+.digital-story p, .digital-case__body > p { max-width: 65ch; color: var(--muted); font-size: clamp(1rem, 1.3vw, 1.2rem); line-height: 1.65; }
+.digital-steps { list-style: decimal-leading-zero; padding-left: 2rem; max-width: 70ch; }
+.digital-steps li { padding: .7rem 0 .7rem .5rem; border-bottom: 1px solid var(--line); line-height: 1.6; }
+.digital-steps li::marker { font-family: var(--font-mono); color: var(--accent); }
+.digital-screens { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: clamp(1rem, 3vw, 3rem); }
+.digital-screens figure { min-width: 0; background: #eeedf7; padding: clamp(.8rem, 2.5vw, 2rem); }
+.digital-screens img { display: block; width: min(100%, 353px); height: auto; margin: 0 auto; border-radius: .6rem; }
+.digital-screens figcaption { margin-top: 1rem; color: var(--muted); font-size: .8rem; line-height: 1.5; }
+.digital-case-actions { display: flex; flex-wrap: wrap; gap: 1rem; }
+.digital-public-screen img { width: 100%; height: auto; display: block; }
+.digital-case .outline-button { max-width: 100%; white-space: normal; text-align: center; }
+@media (max-width: 760px) {
+  .digital-projects__grid, .digital-screens { grid-template-columns: minmax(0, 1fr); }
+  .digital-project__visual { height: 20rem; }
+  .digital-projects .section__head { font-size: .65rem; }
+  .digital-case .case-hero__kicker { letter-spacing: .06em; flex-wrap: wrap; }
+}
