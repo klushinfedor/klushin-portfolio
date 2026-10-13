@@ -71,4 +71,18 @@
   "Личный Telegram-инструмент для подготовки откликов и ответов на анкеты. Сценарий можно адаптировать под задачи клиента: обработку входящих запросов и подготовку текстов.": "Lični Telegram alat za pripremu prijava i odgovora na upitnike. Tok rada može se prilagoditi klijentu, na primer za obradu upita i pripremu tekstova.",
   "Нужен похожий сервис для вашей задачи?": "Potreban vam je sličan servis za vaš projekat?"
 });
+  Object.assign(d.en, {
+  "Экраны Telegram-бота": "Telegram bot screens",
+  "Главный экран: сохранённые вакансии и действия с текущей задачей.": "Home screen: saved vacancies and actions for the current task.",
+  "Черновик отклика на основе вакансии и профессионального опыта.": "An application draft based on the vacancy and professional experience.",
+  "Редактирование, копирование и история версий. Отправку работодателю выполняет пользователь.": "Editing, copying and version history. The user submits the application to the employer.",
+  "Открыть скриншот в полном размере": "Open the full-size screenshot"
+});
+  Object.assign(d.sr, {
+  "Экраны Telegram-бота": "Ekrani Telegram bota",
+  "Главный экран: сохранённые вакансии и действия с текущей задачей.": "Početni ekran: sačuvane ponude za posao i radnje za trenutni zadatak.",
+  "Черновик отклика на основе вакансии и профессионального опыта.": "Nacrt prijave na osnovu ponude za posao i profesionalnog iskustva.",
+  "Редактирование, копирование и история версий. Отправку работодателю выполняет пользователь.": "Uređivanje, kopiranje i istorija verzija. Korisnik šalje prijavu poslodavcu.",
+  "Открыть скриншот в полном размере": "Otvori snimak ekrana u punoj veličini"
+});
 })();

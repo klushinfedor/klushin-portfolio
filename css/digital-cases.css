@@ -30,9 +30,14 @@
 .digital-screens figcaption { margin-top: 1rem; color: var(--muted); font-size: .8rem; line-height: 1.5; }
 .digital-case-actions { display: flex; flex-wrap: wrap; gap: 1rem; }
 .digital-public-screen img { width: 100%; height: auto; display: block; }
+.digital-bot-screens { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: clamp(1rem, 3vw, 3rem); align-items: start; }
+.digital-bot-screens figure { min-width: 0; background: #eeedf7; padding: clamp(.6rem, 2vw, 1.5rem); }
+.digital-bot-screens figure:first-child { grid-column: 1 / -1; max-width: 900px; width: 100%; margin: 0 auto; }
+.digital-bot-screens img { width: 100%; height: auto; display: block; }
+.digital-bot-screens figcaption { margin-top: 1rem; color: var(--muted); font-size: .85rem; line-height: 1.5; }
 .digital-case .outline-button { max-width: 100%; white-space: normal; text-align: center; }
 @media (max-width: 760px) {
-  .digital-projects__grid, .digital-screens { grid-template-columns: minmax(0, 1fr); }
+  .digital-projects__grid, .digital-screens, .digital-bot-screens { grid-template-columns: minmax(0, 1fr); }
   .digital-project__visual { height: 20rem; }
   .digital-projects .section__head { font-size: .65rem; }
   .digital-case .case-hero__kicker { letter-spacing: .06em; flex-wrap: wrap; }
