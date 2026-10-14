@@ -5,5 +5,10 @@
   "durable_objects": {
     "bindings": [{ "name": "GAME", "class_name": "GameRoom" }]
   },
+  "previews": {
+    "durable_objects": {
+      "bindings": [{ "name": "GAME", "class_name": "GameRoom" }]
+    }
+  },
   "migrations": [{ "tag": "v1", "new_sqlite_classes": ["GameRoom"] }]
 }
