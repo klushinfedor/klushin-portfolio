@@ -1,0 +1,88 @@
+(function () {
+  var d = window.PortfolioTranslations;
+  if (!d) return;
+  Object.assign(d.en, {
+  "Сайты, интерфейсы и автоматизация": "Websites, interfaces and automation",
+  "Веб-приложение · запись в автосервис": "Web app · car service booking",
+  "Telegram-бот · ИИ-помощник": "Telegram bot · AI assistant",
+  "Онлайн-запись для клиента. Управление заказами, боксами и оплатами для студии.": "Online booking for customers. Orders, service bays and payments for the studio.",
+  "Присланные вакансии, черновики откликов и ответы на анкеты — в одном диалоге.": "Submitted vacancies, application drafts and questionnaire answers in one conversation.",
+  "Смотреть проект": "View project",
+  "Обсудить задачу": "Discuss your project",
+  "Вакансия → разбор → черновик": "Vacancy → analysis → draft",
+  "Личный инструмент. Решения такого формата — под задачи клиента.": "A personal tool. Similar solutions can be tailored to a client’s needs.",
+  "Задача": "Task",
+  "Моя роль": "My role",
+  "Результат": "Result",
+  "Пользовательские сценарии": "User journeys",
+  "Собрать запись клиента и повседневную работу студии в одном сервисе: от выбора услуги до выдачи автомобиля.": "Bring customer booking and daily studio operations into one service, from selecting a service to vehicle handover.",
+  "Проектирование сценариев клиента и владельца, дизайн интерфейсов, адаптивная реализация и интеграция серверной логики с помощью ИИ-инструментов.": "Customer and owner journey design, interface design, responsive implementation and server integration with AI tools.",
+  "Клиент выбирает услугу и доступное время, оставляет пожелания и открывает свою запись.": "The customer chooses a service and available time, leaves a note and opens their booking.",
+  "Владелец распределяет автомобили по боксам, фиксирует приём, готовность и выдачу.": "The owner assigns vehicles to bays and records intake, readiness and handover.",
+  "Оплаты и возвраты учитываются отдельно от выручки по выданным автомобилям.": "Payments and refunds are tracked separately from revenue for vehicles handed over.",
+  "Изменения записи приходят через push после включения уведомлений; вопросы можно передать сотруднику через Telegram.": "Booking changes arrive via push after notifications are enabled; questions can be passed to staff through Telegram.",
+  "Экраны приложения": "Application screens",
+  "Кабинет владельца: раздельные отчёты поступлений и выручки. Тестовые данные.": "Owner dashboard: separate cash receipts and revenue reports. Test data.",
+  "Ранний приём автомобиля: проверка занятости бокса и подтверждение действия. Тестовые данные.": "Early vehicle intake: bay availability check and action confirmation. Test data.",
+  "Веб-приложение с клиентской записью и отдельным кабинетом студии. Приложение можно добавить на главный экран телефона.": "A web app with customer booking and a separate studio dashboard. It can be added to a phone’s home screen.",
+  "Открыть сайт студии": "Open the studio website",
+  "Вакансии остаются в переписке, а подготовка каждого отклика требует заново собирать опыт и ответы. Нужен личный инструмент, который сохраняет контекст и помогает подготовить текст.": "Vacancies get lost in conversations, and each application requires collecting experience and answers again. A personal tool should retain context and help prepare the text.",
+  "Постановка задачи, проектирование диалогов и кнопок, настройка профиля кандидата и разработка интеграции с ИИ с помощью ИИ-инструментов.": "Brief definition, conversation and button design, candidate profile configuration and AI integration development with AI tools.",
+  "Прислать вакансию и сохранить её для дальнейшей работы.": "Send a vacancy and save it for later.",
+  "Подготовить черновик отклика на основе вакансии и своего опыта, затем проверить и отредактировать текст.": "Prepare an application draft based on the vacancy and personal experience, then review and edit it.",
+  "Передать вопросы анкеты текстом, скриншотом или ссылкой на доступную публичную форму.": "Provide questionnaire questions as text, a screenshot or a link to an accessible public form.",
+  "Подтвердить запрос к ИИ, получить ответы по вопросам и скопировать их для самостоятельной отправки.": "Confirm the AI request, receive answers to the questions and copy them for manual submission.",
+  "Бот не отправляет отклики и не заполняет формы вместо пользователя. Закрытые формы и страницы, которые не удаётся прочитать по ссылке, можно передать скриншотами.": "The bot does not submit applications or fill in forms for the user. Private forms and pages that cannot be read through a link can be provided as screenshots.",
+  "Личный Telegram-инструмент для подготовки откликов и ответов на анкеты. Сценарий можно адаптировать под задачи клиента: обработку входящих запросов и подготовку текстов.": "A personal Telegram tool for drafting applications and questionnaire answers. The workflow can be adapted to client needs, such as handling incoming requests and preparing texts.",
+  "Нужен похожий сервис для вашей задачи?": "Need a similar service for your project?"
+});
+  Object.assign(d.sr, {
+  "Сайты, интерфейсы и автоматизация": "Sajtovi, interfejsi i automatizacija",
+  "Веб-приложение · запись в автосервис": "Veb aplikacija · zakazivanje auto-servisa",
+  "Telegram-бот · ИИ-помощник": "Telegram bot · AI asistent",
+  "Онлайн-запись для клиента. Управление заказами, боксами и оплатами для студии.": "Onlajn zakazivanje za klijente. Nalozi, servisna mesta i uplate za studio.",
+  "Присланные вакансии, черновики откликов и ответы на анкеты — в одном диалоге.": "Poslate ponude za posao, nacrti prijava i odgovori na upitnike u jednom razgovoru.",
+  "Смотреть проект": "Pogledaj projekat",
+  "Обсудить задачу": "Razgovarajmo o projektu",
+  "Вакансия → разбор → черновик": "Ponuda → analiza → nacrt",
+  "Личный инструмент. Решения такого формата — под задачи клиента.": "Lični alat. Slična rešenja mogu se prilagoditi potrebama klijenta.",
+  "Задача": "Zadatak",
+  "Моя роль": "Moja uloga",
+  "Результат": "Rezultat",
+  "Пользовательские сценарии": "Korisnički scenariji",
+  "Собрать запись клиента и повседневную работу студии в одном сервисе: от выбора услуги до выдачи автомобиля.": "Objediniti zakazivanje klijenata i svakodnevni rad studija, od izbora usluge do predaje vozila.",
+  "Проектирование сценариев клиента и владельца, дизайн интерфейсов, адаптивная реализация и интеграция серверной логики с помощью ИИ-инструментов.": "Projektovanje klijentskih i vlasničkih scenarija, dizajn interfejsa, prilagodljiva realizacija i serverska integracija uz AI alate.",
+  "Клиент выбирает услугу и доступное время, оставляет пожелания и открывает свою запись.": "Klijent bira uslugu i slobodan termin, ostavlja napomenu i otvara svoje zakazivanje.",
+  "Владелец распределяет автомобили по боксам, фиксирует приём, готовность и выдачу.": "Vlasnik raspoređuje vozila po servisnim mestima i beleži prijem, spremnost i predaju.",
+  "Оплаты и возвраты учитываются отдельно от выручки по выданным автомобилям.": "Uplate i povraćaji prate se odvojeno od prihoda po predatim vozilima.",
+  "Изменения записи приходят через push после включения уведомлений; вопросы можно передать сотруднику через Telegram.": "Promene zakazivanja stižu putem push obaveštenja nakon uključivanja; pitanja se mogu proslediti zaposlenima preko Telegrama.",
+  "Экраны приложения": "Ekrani aplikacije",
+  "Кабинет владельца: раздельные отчёты поступлений и выручки. Тестовые данные.": "Vlasnički panel: odvojeni izveštaji uplata i prihoda. Test podaci.",
+  "Ранний приём автомобиля: проверка занятости бокса и подтверждение действия. Тестовые данные.": "Rani prijem vozila: provera zauzetosti servisnog mesta i potvrda radnje. Test podaci.",
+  "Веб-приложение с клиентской записью и отдельным кабинетом студии. Приложение можно добавить на главный экран телефона.": "Veb aplikacija sa zakazivanjem za klijente i odvojenim panelom studija. Može se dodati na početni ekran telefona.",
+  "Открыть сайт студии": "Otvori sajt studija",
+  "Вакансии остаются в переписке, а подготовка каждого отклика требует заново собирать опыт и ответы. Нужен личный инструмент, который сохраняет контекст и помогает подготовить текст.": "Ponude za posao ostaju u porukama, a svaka prijava zahteva ponovno prikupljanje iskustva i odgovora. Potreban je lični alat koji čuva kontekst i pomaže u pripremi teksta.",
+  "Постановка задачи, проектирование диалогов и кнопок, настройка профиля кандидата и разработка интеграции с ИИ с помощью ИИ-инструментов.": "Definisanje zadatka, projektovanje razgovora i dugmadi, podešavanje profila kandidata i razvoj AI integracije uz AI alate.",
+  "Прислать вакансию и сохранить её для дальнейшей работы.": "Poslati ponudu za posao i sačuvati je za kasnije.",
+  "Подготовить черновик отклика на основе вакансии и своего опыта, затем проверить и отредактировать текст.": "Pripremiti nacrt prijave na osnovu ponude i svog iskustva, zatim proveriti i urediti tekst.",
+  "Передать вопросы анкеты текстом, скриншотом или ссылкой на доступную публичную форму.": "Poslati pitanja upitnika kao tekst, snimak ekrana ili link do dostupnog javnog obrasca.",
+  "Подтвердить запрос к ИИ, получить ответы по вопросам и скопировать их для самостоятельной отправки.": "Potvrditi AI zahtev, dobiti odgovore na pitanja i kopirati ih za samostalno slanje.",
+  "Бот не отправляет отклики и не заполняет формы вместо пользователя. Закрытые формы и страницы, которые не удаётся прочитать по ссылке, можно передать скриншотами.": "Bot ne šalje prijave i ne popunjava obrasce umesto korisnika. Zatvoreni obrasci i stranice koje se ne mogu pročitati putem linka mogu se poslati kao snimci ekrana.",
+  "Личный Telegram-инструмент для подготовки откликов и ответов на анкеты. Сценарий можно адаптировать под задачи клиента: обработку входящих запросов и подготовку текстов.": "Lični Telegram alat za pripremu prijava i odgovora na upitnike. Tok rada može se prilagoditi klijentu, na primer za obradu upita i pripremu tekstova.",
+  "Нужен похожий сервис для вашей задачи?": "Potreban vam je sličan servis za vaš projekat?"
+});
+  Object.assign(d.en, {
+  "Экраны Telegram-бота": "Telegram bot screens",
+  "Главный экран: сохранённые вакансии и действия с текущей задачей.": "Home screen: saved vacancies and actions for the current task.",
+  "Черновик отклика на основе вакансии и профессионального опыта.": "An application draft based on the vacancy and professional experience.",
+  "Редактирование, копирование и история версий. Отправку работодателю выполняет пользователь.": "Editing, copying and version history. The user submits the application to the employer.",
+  "Открыть скриншот в полном размере": "Open the full-size screenshot"
+});
+  Object.assign(d.sr, {
+  "Экраны Telegram-бота": "Ekrani Telegram bota",
+  "Главный экран: сохранённые вакансии и действия с текущей задачей.": "Početni ekran: sačuvane ponude za posao i radnje za trenutni zadatak.",
+  "Черновик отклика на основе вакансии и профессионального опыта.": "Nacrt prijave na osnovu ponude za posao i profesionalnog iskustva.",
+  "Редактирование, копирование и история версий. Отправку работодателю выполняет пользователь.": "Uređivanje, kopiranje i istorija verzija. Korisnik šalje prijavu poslodavcu.",
+  "Открыть скриншот в полном размере": "Otvori snimak ekrana u punoj veličini"
+});
+})();

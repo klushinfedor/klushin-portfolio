@@ -7,7 +7,7 @@
 <meta name="description" content="Избранные проекты Фёдора Клушина: веб-дизайн, UX/UI, айдентика, упаковка, арт-дирекшн и логотипы.">
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/styles.css"><link rel="stylesheet" href="css/redesign.css">
+<link rel="stylesheet" href="css/styles.css"><link rel="stylesheet" href="css/redesign.css"><link rel="stylesheet" href="css/digital-cases.css">
 </head>
 <body class="page-works">
 <a class="skip-link" href="#main">К содержанию</a>
@@ -20,6 +20,28 @@
 </header>
 <main id="main">
   <header class="works-hero"><span class="works-hero__eyebrow">Дизайн / избранные проекты</span><h1>РАБОТЫ</h1><p>От идеи и структуры до изображения, интерфейса и печатного макета.</p></header>
+  <section class="digital-projects section" aria-labelledby="digital-projects-title">
+    <div class="section__head"><h2 id="digital-projects-title">Сайты, интерфейсы и автоматизация</h2><span>2026</span></div>
+    <div class="digital-projects__grid">
+      <article class="digital-project">
+        <a class="digital-project__visual digital-project__visual--graphite" href="work/graphite.html" aria-label="Graphite">
+          <img src="assets/cases/graphite/public.jpg" alt="Graphite" width="1364" height="936" loading="lazy">
+        </a>
+        <p class="digital-project__tag">Веб-приложение · запись в автосервис</p><h3><a href="work/graphite.html">Graphite</a></h3>
+        <p class="digital-project__description">Онлайн-запись для клиента. Управление заказами, боксами и оплатами для студии.</p>
+        <a class="digital-project__link" href="work/graphite.html">Смотреть проект <span aria-hidden="true">↗</span></a>
+      </article>
+      <article class="digital-project">
+        <a class="digital-project__visual digital-project__visual--bot" href="work/telegram-job-assistant.html" aria-label="Telegram Job Assistant">
+          <span class="digital-project__monogram" aria-hidden="true">JA<span>↗</span></span>
+          <span class="digital-project__workflow">Вакансия → разбор → черновик</span>
+        </a>
+        <p class="digital-project__tag">Telegram-бот · ИИ-помощник</p><h3><a href="work/telegram-job-assistant.html">Telegram Job Assistant</a></h3>
+        <p class="digital-project__description">Присланные вакансии, черновики откликов и ответы на анкеты — в одном диалоге.</p>
+        <a class="digital-project__link" href="work/telegram-job-assistant.html">Смотреть проект <span aria-hidden="true">↗</span></a>
+      </article>
+    </div>
+  </section>
   <section class="works-catalog section" data-preview aria-label="Избранные проекты">
     <div class="section__head"><span>Избранные проекты</span><span>01—04</span></div>
     <div class="work__list">
@@ -45,6 +67,7 @@
   <div class="preview__fig" data-thumb="5"><img src="assets/cases/darya-t/preview.png" alt=""></div>
 </div>
 <script src="js/i18n-data.js"></script>
+<script src="js/digital-case-translations.js"></script>
 <script src="js/i18n.js"></script>
 <script src="js/site.js"></script>
 </body>
