@@ -85,4 +85,26 @@
   "Редактирование, копирование и история версий. Отправку работодателю выполняет пользователь.": "Uređivanje, kopiranje i istorija verzija. Korisnik šalje prijavu poslodavcu.",
   "Открыть скриншот в полном размере": "Otvori snimak ekrana u punoj veličini"
 });
+Object.assign(d.en, {
+  "Клиентская часть на телефоне": "Customer experience on mobile",
+  "Кабинет владельца на телефоне": "Owner dashboard on mobile",
+  "Главная: знакомство со студией и переход к записи.": "Home: introduction to the studio and booking entry point.",
+  "Мои записи: текущие заказы, история и связь со студией.": "My bookings: current orders, history and contact with the studio.",
+  "Связь с сотрудником через Telegram.": "Contact a staff member via Telegram.",
+  "Расписание владельца: период, показатели и фильтр боксов.": "Owner schedule: period, metrics and service bay filter.",
+  "Финансы: поступления, оплаты и возвраты за выбранный период.": "Finances: receipts, payments and refunds for the selected period.",
+  "Настройки студии: описание, контакты и часовой пояс.": "Studio settings: description, contact details and time zone.",
+  "Скриншоты демонстрационной студии. Показатели и контакты на экранах — тестовые.": "Screenshots of the demonstration studio. Metrics and contact details shown are test data."
+});
+Object.assign(d.sr, {
+  "Клиентская часть на телефоне": "Korisnički deo na telefonu",
+  "Кабинет владельца на телефоне": "Vlasnički panel na telefonu",
+  "Главная: знакомство со студией и переход к записи.": "Početna: predstavljanje studija i prelazak na zakazivanje.",
+  "Мои записи: текущие заказы, история и связь со студией.": "Moji termini: aktuelni nalozi, istorija i kontakt sa studijom.",
+  "Связь с сотрудником через Telegram.": "Kontakt sa zaposlenim putem Telegrama.",
+  "Расписание владельца: период, показатели и фильтр боксов.": "Raspored vlasnika: period, pokazatelji i filter radnih mesta.",
+  "Финансы: поступления, оплаты и возвраты за выбранный период.": "Finansije: prilivi, uplate i povraćaji za izabrani period.",
+  "Настройки студии: описание, контакты и часовой пояс.": "Podešavanja studija: opis, kontakt podaci i vremenska zona.",
+  "Скриншоты демонстрационной студии. Показатели и контакты на экранах — тестовые.": "Snimci ekrana demonstracionog studija. Pokazatelji i kontakt podaci su testni."
+});
 })();

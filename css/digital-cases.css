@@ -42,3 +42,9 @@
   .digital-projects .section__head { font-size: .65rem; }
   .digital-case .case-hero__kicker { letter-spacing: .06em; flex-wrap: wrap; }
 }
+
+/* Real mobile Graphite screens, without cropping their interface. */
+.graphite-gallery { align-items: start; }
+.graphite-gallery a { display: block; border-radius: .6rem; }
+.graphite-gallery a:focus-visible { outline: 3px solid var(--accent); outline-offset: 5px; }
+@media (min-width: 1100px) { .graphite-gallery { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
