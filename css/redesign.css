@@ -764,3 +764,7 @@
 
 .works-outro__actions{display:flex;flex-wrap:wrap;align-items:center;gap:1rem;}
 @media(max-width:480px){.works-outro__actions{align-items:stretch;flex-direction:column;}.works-outro__actions .outline-button{justify-content:center;max-width:100%;}}
+
+/* Long Cyrillic case title: leave room for the dots above Ё. */
+.page-kisliki .case-hero h1 { line-height: 1.12; }
+.page-works .row--kisliki .row__name { letter-spacing: -0.035em; line-height: 1.15; }
